@@ -322,6 +322,11 @@ color@^4.2.3:
     color-convert "^2.0.1"
     color-string "^1.9.0"
 
+"colors@>= 0.3.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
+  integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
+
 detect-libc@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.3.tgz#f0cd503b40f9939b894697d19ad50895e30cf700"
@@ -418,6 +423,19 @@ lightningcss@^1.29.1:
     lightningcss-win32-arm64-msvc "1.29.2"
     lightningcss-win32-x64-msvc "1.29.2"
 
+mailer@^0.6.7:
+  version "0.6.7"
+  resolved "https://registry.yarnpkg.com/mailer/-/mailer-0.6.7.tgz#012d69b2554864976d9d77f5326b35097653f653"
+  integrity sha512-llrQPeVVMUGq+q9mWXvJfDKBq92accMum1tDuN6Wynvs628iYjGyOpLWUkcPq2Y6zK9WJxC85nlru+8llNxl2A==
+  dependencies:
+    colors ">= 0.3.0"
+    nodemailer "0.1.20"
+
+mimelib-noiconv@*:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/mimelib-noiconv/-/mimelib-noiconv-0.1.9.tgz#eadce6f9ce226842501a203e95bcee96af8189f2"
+  integrity sha512-r5jXJR1Zq5SWX/LQDeC474Vvbq8tAWwaK1798wzfZGlmqoCH/cU5cDiYb1IMSYKPzC2hsTNIpqylW9R7DmDvQA==
+
 nanoid@^3.3.6, nanoid@^3.3.8:
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.9.tgz#e0097d8e026b3343ff053e9ccd407360a03f503a"
@@ -445,6 +463,13 @@ next@15.2.1:
     "@next/swc-win32-arm64-msvc" "15.2.1"
     "@next/swc-win32-x64-msvc" "15.2.1"
     sharp "^0.33.5"
+
+nodemailer@0.1.20:
+  version "0.1.20"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-0.1.20.tgz#a91748a448eddf35fe24d7272c8187ddcc38e253"
+  integrity sha512-0p+nadmJiD2SpYsxsAdj26QYMZKTxAHC6h4zyl9sKD5QHsyby9AdqxYvP5F++rUkc4x1goAyeOi6Xl05k6eekw==
+  dependencies:
+    mimelib-noiconv "*"
 
 picocolors@^1.0.0, picocolors@^1.1.1:
   version "1.1.1"
