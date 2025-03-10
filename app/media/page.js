@@ -39,10 +39,9 @@ export default function Media() {
             className="fixed -z-10"
             src={'/smooth_wall.png'}
             alt="background texture"
-            width={0}
-            height={0}
+            fill
+            objectFit="cover"
             sizes="100vw"
-            style={{width: '100%', height: 'auto'}}
           />
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <div className="text-black bg-white">

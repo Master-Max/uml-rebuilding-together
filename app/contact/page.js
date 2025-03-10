@@ -63,11 +63,20 @@ export default function Contact() {
 
     return (
         <>
+            <Image
+                className="fixed -z-10"
+                src='/smooth_wall.png'
+                alt="background texture"
+                fill
+                objectFit="cover"
+                sizes="100vw"
+            />
+
             <Navbar></Navbar>
-            <div className="overflow-x-hidden bg-white">
+            <div className="overflow-x-hidden">
                 <div className="relative w-full min-h-[calc(100vh-140px)]">
-                    <div className="min-h-[70vh] bg-white flex items-center justify-center">
-                        <div className="grid justify-items-center z-80">
+                    <div className="min-h-[70vh] flex items-center justify-center">
+                        <div className="grid justify-items-center z-80 bg-white rounded-md p-8">
                             <h2 className="mx-4 lg:text-6xl text-center text-4xl font-bold text-[#89c854] w-full">Contact Us</h2>
                             <div className="mx-4 grid justify-items-center w-full min-h-[478px] z-50 relative">
                                 {(contactStatus === 'unsent')? generateContactForm() : <></>}

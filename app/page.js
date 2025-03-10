@@ -91,15 +91,17 @@ export default function Home() {
   }
 
   return (
-    <>
+    <div className="relative">
       <Image
           className="fixed -z-10"
           src={'/smooth_wall.png'}
           alt="background texture"
-          width={0}
-          height={0}
+          // width={0}
+          // height={0}
+          fill
+          objectFit="cover"
           sizes="100vw"
-          style={{width: '100%', height: 'auto'}}
+          // style={{width: '100%', height: 'auto'}}
         />
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div className="text-black bg-white">
@@ -180,6 +182,6 @@ export default function Home() {
           </div>
       </div>
       <Footer/>
-    </>
+    </div>
   );
 }

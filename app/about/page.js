@@ -8,10 +8,9 @@ export default function Home() {
                   className="fixed -z-10"
                   src='/smooth_wall.png'
                   alt="background texture"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{width: '100%', height: 'auto'}}
+                  fill
+                    objectFit="cover"
+                    sizes="100vw"
                 />
             <Navbar/>
             <div className="bg-transparent text-black w-full min-h-[calc(100vh-140px)]">
