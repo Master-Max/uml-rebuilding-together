@@ -94,7 +94,7 @@ export default function Media() {
             src={'/smooth_wall.png'}
             alt="background texture"
             fill
-            objectFit="cover"
+            style={{objectFit:"cover"}}
             sizes="100vw"
           />
         <Modal isOpen={isModalOpen} onClose={closeModal}>

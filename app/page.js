@@ -96,13 +96,11 @@ export default function Home() {
           className="fixed -z-10"
           src={'/smooth_wall.png'}
           alt="background texture"
-          // width={0}
-          // height={0}
           fill
-          objectFit="cover"
+          style={{objectFit:"cover"}}
           sizes="100vw"
-          // style={{width: '100%', height: 'auto'}}
         />
+
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div className="text-black bg-white">
         <div className="min-h-[70vh] bg-white flex items-center justify-center">
@@ -133,9 +131,12 @@ export default function Home() {
       </div>
         </div>
       </Modal>
+
       <Navbar/>
-      <div className="bg-transparent text-black w-full min-h-[calc(100vh-140px)]">
-      <div className="grid justify-center pt-8">
+      <div className="bg-transparent text-black w-full min-h-[calc(100vh-140px)] px-4 lg:px-40 pb-8" >
+        <div className="bg-white mb-12 pt-8 pb-8 px-2 ">
+          {/* Group Photo */}
+          <div className="grid justify-center pt-8">
             <Image 
               className="" 
               src="/images/groupPhoto.png"
@@ -143,43 +144,48 @@ export default function Home() {
               width={500}
               height={500}            
             />
-            </div> 
-
-            <div className="px-8 py-16 grid justify-center">
-                <h1 className="font-bold text-green-600 text-3xl" >
-                    Promoting a better world one house at a time!
-                </h1>
-            </div>
-            <div className="mx-8 grid justify-center">
-                <h3 className="font-bold text-2xl">About Us</h3>
-                <p className="max-w-2xl">
-                    Rebuilding Together Greater Haverhill, Inc. is a local 501(c)(3) tax exempt affiliate of the National Rebuilding Together organization that joins together volunteers and communities to improve the homes and lives of income-challenged homeowners. We work in the communities of Haverhill, Groveland, Georgetown, Boxford, West Newbury, Merrimac, MA and Plaistow, NH. The Haverhill affiliate has been in continuous operation for 28 years!
-                </p>
-            </div>
-            <div className="grid justify-center p-8">
-              <Image 
-                className="" 
-                src="/images/handsCircle.png"
-                alt="image of hands in a circle"
-                width={400}
-                height={400}            
-              />
-            </div> 
-            <div className="mx-8 grid justify-center">
-                <h3 className="font-bold text-2xl">Our Mission</h3>
-                <p className="max-w-2xl">
-                    Our mission is "Repairing homes, Revitalizing communities, Rebuilding lives; as we assure that income-challenged homeowners, particularly older adults, veterans, disabled, or families with children live in warmth, safety, and independence." Our vision is safe homes and communities for everyone!
-                </p>
-            </div>
-
-            <div className="w-full grid grid-row-1 gap-2 justify-center py-8">
-              <button className="bg-[#e2dad1] px-4 py-2 rounded-lg text-black cursor-pointer border-2 hover:border-[#89c854]">
-                Donate
-              </button>
-              <button className="bg-[#e2dad1] px-4 py-2 rounded-lg text-black cursor-pointer border-2 hover:border-[#89c854]" onClick={openModal}>
-                Contact Us
-              </button>
+          </div> 
+          {/* Tagline */}
+          <div className="px-8 py-16 grid justify-center">
+            <h1 className="font-bold text-green-600 text-3xl" >
+                Promoting a better world one house at a time!
+            </h1>
           </div>
+          {/* About Us Text */}
+          <div className="mx-8 grid justify-center">
+            <h3 className="font-bold text-2xl">About Us</h3>
+            <p className="max-w-2xl">
+                Rebuilding Together Greater Haverhill, Inc. is a local 501(c)(3) tax exempt affiliate of the National Rebuilding Together organization that joins together volunteers and communities to improve the homes and lives of income-challenged homeowners. We work in the communities of Haverhill, Groveland, Georgetown, Boxford, West Newbury, Merrimac, MA and Plaistow, NH. The Haverhill affiliate has been in continuous operation for 28 years!
+            </p>
+          </div>
+          {/* Hands Picture */}
+          <div className="grid justify-center p-8">
+            <Image 
+              className="" 
+              src="/images/handsCircle.png"
+              alt="image of hands in a circle"
+              width={400}
+              height={400}            
+            />
+          </div> 
+          {/* Mission Statement */}
+          <div className="mx-8 grid justify-center">
+              <h3 className="font-bold text-2xl">Our Mission</h3>
+              <p className="max-w-2xl">
+                  Our mission is "Repairing homes, Revitalizing communities, Rebuilding lives; as we assure that income-challenged homeowners, particularly older adults, veterans, disabled, or families with children live in warmth, safety, and independence." Our vision is safe homes and communities for everyone!
+              </p>
+          </div>
+          {/* Donate and Contact Buttons */}
+          <div className="w-full grid grid-row-1 gap-2 justify-center py-8">
+            <button className="bg-[#e2dad1] px-4 py-2 rounded-lg text-black cursor-pointer border-2 hover:border-[#89c854]">
+              Donate
+            </button>
+            <button className="bg-[#e2dad1] px-4 py-2 rounded-lg text-black cursor-pointer border-2 hover:border-[#89c854]" onClick={openModal}>
+              Contact Us
+            </button>
+          </div>
+
+        </div>
       </div>
       <Footer/>
     </div>

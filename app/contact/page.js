@@ -68,7 +68,7 @@ export default function Contact() {
                 src='/smooth_wall.png'
                 alt="background texture"
                 fill
-                objectFit="cover"
+                style={{objectFit:"cover"}}
                 sizes="100vw"
             />
 

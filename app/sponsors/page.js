@@ -5,11 +5,11 @@ export default function Home() {
     return(
         <>
              <Image
-                  className="fixed -z-10"
-                  src='/smooth_wall.png'
-                  alt="background texture"
-                  fill
-                    objectFit="cover"
+                    className="fixed -z-10"
+                    src='/smooth_wall.png'
+                    alt="background texture"
+                    fill
+                    style={{objectFit:"cover"}}
                     sizes="100vw"
                 />
             <Navbar/>
