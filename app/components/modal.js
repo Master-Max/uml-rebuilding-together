@@ -16,7 +16,7 @@ const Modal = ({ isOpen, onClose, children }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={handleContentClick}>
-        <button onClick={onClose} className="close-button font-bold">
+        <button onClick={onClose} className="close-button font-bold hover:text-red-500">
           &#10761;
           {/* X */}
         </button>
