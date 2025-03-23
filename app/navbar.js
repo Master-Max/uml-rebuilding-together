@@ -56,11 +56,27 @@ export default function Navbar() {
     const openBurger = () => setIsBurgerOpen(true);
     const closeBurger = () => setIsBurgerOpen(false);
 
+    const fetchSearch = async (e) => {
+        e.preventDefault();
+        let myTerm = e.target.search.value
+        console.log('SEARCH: ' + myTerm)
+        const searchData = {term: myTerm}
+
+        const response = await fetch('api/search', {
+        method: 'POST',
+        body: JSON.stringify(searchData),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+        });
+
+        const data = await response.json();
+    }
+
     return(
         <>
             <div className='nav-bar bg-white w-full sticky top-0 z-[300] shadow-xl hidden md:block'>
                 <div className='logo text-white flex justify-center p-2'>
-                    {/* <h1>MicroReplay</h1> */}
                     <Link href='/'>
                         <Image
                             className=""
@@ -69,8 +85,17 @@ export default function Navbar() {
                             width={300}
                             height={300}
                         />
-                    </Link>                    
+                    </Link>                   
                 </div>
+                <div className="flex justify-center pb-2">
+                        <form onSubmit={fetchSearch}>
+                            <input 
+                                id='search'
+                                type="text"
+                                className="border-2 border-black px-1 rounded-md" //todo make vertically center
+                            ></input>
+                        </form>
+                    </div> 
                 <div className='links flex justify-center'>
                     {SiteLinks.map((data) => generateLinkButton(data))}
                 </div>
