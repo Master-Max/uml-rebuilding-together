@@ -102,7 +102,7 @@ export default function Home() {
         />
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <div className="text-black bg-white">
+        <div className="text-black bg-white ">
         <div className="min-h-[70vh] bg-white flex items-center justify-center">
         <div className="grid justify-items-center z-80">
             <h2 className="mx-4 lg:text-6xl text-center text-4xl font-bold text-[#89c854] w-full">Contact Us</h2>
@@ -134,7 +134,7 @@ export default function Home() {
 
       <Navbar/>
       <div className="bg-transparent text-black w-full min-h-[calc(100vh-140px)] px-4 lg:px-40 pb-8" >
-        <div className="bg-white mb-12 pt-8 pb-8 px-2 ">
+        <div className="bg-white mb-12 pt-8 pb-8 px-2 shadow-xl">
           {/* Group Photo */}
           <div className="grid justify-center pt-8">
             <Image 

@@ -58,7 +58,7 @@ export default function Navbar() {
 
     return(
         <>
-            <div className='nav-bar bg-white w-full sticky top-0 z-[300] shadow-lg hidden md:block'>
+            <div className='nav-bar bg-white w-full sticky top-0 z-[300] shadow-xl hidden md:block'>
                 <div className='logo text-white flex justify-center p-2'>
                     {/* <h1>MicroReplay</h1> */}
                     <Link href='/'>
