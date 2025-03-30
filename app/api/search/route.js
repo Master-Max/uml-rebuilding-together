@@ -22,7 +22,8 @@ export async function POST(request){
 
   let exampleSearchResult = {
     link: '/about',
-    match: 'about'
+    match: 'about',
+    term: 'a'
   }
 
   searchDictTerms.forEach((key) => {
@@ -37,9 +38,9 @@ export async function POST(request){
   // let outValue = searchDict[`${outKey}`]
 
   if(outArray.length > 0){
-    return NextResponse.json({array: outArray, status: 0})
+    return NextResponse.json({array: outArray, term: term, status: 0})
   }else{
-    return NextResponse.json({array: [], status: 1})
+    return NextResponse.json({array: [], term: term, status: 1})
   }
 
   

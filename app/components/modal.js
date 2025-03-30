@@ -42,8 +42,6 @@ const Modal = ({ isOpen, onClose, children }) => {
           background: white;
           padding: 2rem;
           border-radius: 8px;
-          max-width: 500px;
-          width: 100%;
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
           position: relative;
         }
