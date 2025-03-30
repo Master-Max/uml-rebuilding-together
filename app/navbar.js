@@ -65,7 +65,7 @@ export default function Navbar() {
         e.preventDefault();
         console.log(e)
         console.log(e.target.value)
-        let myTerm = e.target.value
+        let myTerm = !!e.target.value? e.target.value : e.target.search.value
         // let myTerm = !!e.target.search.value? e.target.search.value: e.target.value
         console.log('SEARCH: ' + myTerm)
         const searchData = {term: myTerm}
