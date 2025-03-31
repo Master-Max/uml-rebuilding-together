@@ -51,9 +51,9 @@ export default function Home() {
                     <hr></hr>
                     <div className="flex flex-col py-4 px-4 gap-4">
                         <h4 className="text-xl font-bold text-center">Online Volunteer Application</h4>
-                        <a className="hover:outline text-[#89c854] border-2 border-black rounded text-center" href="https://fwdev.civicore.com/rthaverhill/index.php?section=volunteerApplication&action=new">Fill out the form here!</a>
+                        <a className="font-bold hover:outline text-[#89c854] border-2 border-black rounded text-center" href="https://fwdev.civicore.com/rthaverhill/index.php?section=volunteerApplication&action=new">Fill out the form here!</a>
                         <h5 className="text-lg font-bold text-center">Your feedback is important to us.</h5>
-                        <a className="hover:outline text-[#89c854] border-2 border-black rounded text-center" href="https://fwdev.civicore.com/rthaverhill/index.php?section=volunteerApplication&action=new">Send feedback here!</a>
+                        <a className="font-bold hover:outline text-[#89c854] border-2 border-black rounded text-center" href="https://fwdev.civicore.com/rthaverhill/index.php?section=volunteerApplication&action=new">Send feedback here!</a>
                     </div>
                 </div>
             </div>

@@ -147,7 +147,7 @@ export default function Home() {
           </div> 
           {/* Tagline */}
           <div className="px-8 py-16 grid justify-center">
-            <h1 className="font-bold text-[#89c854] text-3xl" >
+            <h1 className="font-bold text-[#89c854] text-3xl text-center" >
                 Promoting a better world one house at a time!
             </h1>
           </div>

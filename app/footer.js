@@ -5,13 +5,16 @@ export default function Footer() {
         <div className="w-full bg-[#89c854] h-40 shadow-[0_-10px_10px_rgba(0,0,0,0.25)]">
             <div className="grid justify-content-center pt-8">
                 <div className="md:flex md:flex-row justify-between flex-col bg-white h-full p-8 ">
-                    <Image
-                        className="justify-self-center md:py-0 py-1"
-                        src="/Logo.png"
-                        alt="Rebuiling Together Logo"
-                        width={300}
-                        height={100}
-                    />
+                    <div className="md:w-48 w-full md:py-8 py-2 flex justify-center ">
+                        <Image
+                            className="md:py-0 py-1"
+                            src="/Logo.png"
+                            alt="Rebuiling Together Logo"
+                            width={300}
+                            height={100}
+                            style={`object-fit: "cover";`}
+                        />
+                    </div>
                     <div className="text-center md:py-0 py-2">
                         <p>10 Phoenix Row</p>
                         <p>Haverhill, MA, 01832</p>
