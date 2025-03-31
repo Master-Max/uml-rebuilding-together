@@ -15,8 +15,8 @@ export default function About() {
                 sizes="100vw"
             />
             <div className="bg-transparent text-black w-full min-h-[calc(100vh-140px)] px-4 lg:px-40 pb-8">
-                <div className="grid place-content-center bg-white mb-12 pt-8 pb-8 px-2">
-                    <h1 className="text-3xl font-bold underline pb-8 text-center lg:text-left">About Us</h1>
+                <div className="grid pt-16 place-content-center bg-white mb-12 pt-8 pb-8 px-2">
+                    <h1 className="text-3xl font-bold underline pb-8 text-center">About Us</h1>
                     <div className="max-w-[700px] pb-8">
                         <div className="pb-8">
                             <h2 className="text-2xl font-bold w-full pb-4 text-center">What We Do</h2>
