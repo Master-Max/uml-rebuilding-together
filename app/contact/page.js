@@ -74,7 +74,7 @@ export default function Contact() {
 
             <Navbar></Navbar>
             <div className="overflow-x-hidden">
-                <div className="relative w-full min-h-[calc(100vh-140px)]">
+                <div className="relative w-full min-h-[calc(100vh-240px)]">
                     <div className="min-h-[70vh] flex items-center justify-center">
                         <div className="grid justify-items-center z-80 bg-white rounded-md p-8">
                             <h2 className="mx-4 lg:text-6xl text-center text-4xl font-bold text-[#89c854] w-full">Contact Us</h2>
@@ -103,6 +103,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

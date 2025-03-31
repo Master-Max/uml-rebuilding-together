@@ -85,7 +85,7 @@ export default function Home() {
               <input className="focus:outline-[#2dde19] rounded-md border-2 border-black px-2 py-1" type="text" id="fphone" name="fphone" placeholder="(XXX) XXX-XXXX"></input>
               <label className="col-span-2 font-bold text-lg" htmlFor="fmessage">Message:</label>
               <textarea rows="4" className="p-2 focus:outline-[#2dde19] rounded-md col-span-2 border-2 border-black h-[100px]" id="fmessage" name="fmessage" placeholder="Write your message here..."></textarea>
-              <button className="mt-4 col-span-2 rounded-md px-8 py-3 bg-[#89c854] text-black hover:bg-black hover:text-[#89c854] md:text-2xl text-xl font-extrabold" type="submit">Submit</button>
+              <button className="mt-4 col-span-2 rounded-md px-8 py-3 bg-[#89c854] text-black hover:bg-black hover:text-[#89c854] md:text-2xl text-xl font-extrabold cursor-pointer" type="submit">Submit</button>
           </form>
       )
   }
@@ -147,7 +147,7 @@ export default function Home() {
           </div> 
           {/* Tagline */}
           <div className="px-8 py-16 grid justify-center">
-            <h1 className="font-bold text-green-600 text-3xl" >
+            <h1 className="font-bold text-[#89c854] text-3xl" >
                 Promoting a better world one house at a time!
             </h1>
           </div>

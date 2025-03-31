@@ -123,7 +123,7 @@ export default function Navbar() {
                         {searchResults.map((item, index) => {
                             return(
                                 <div key={`${index}-SearchResult`} className="">
-                                    <Link href={!!item.link? item.link : '/404'} className="rounded flex gap-4 w-full bg-gray-300 px-4 py-2 hover:bg-gray-200">
+                                    <Link href={!!item.link? item.link : '/404'} className="rounded md:flex grid gap-4 w-full bg-gray-300 px-4 py-2 hover:bg-gray-200">
                                         <h6 className="text-blue-700">{item.link}</h6>
                                         {JSON.stringify(item)}
                                     </Link>
@@ -199,6 +199,11 @@ export default function Navbar() {
 
                         <div className='links flex-row absolute w-full text-center bg-white shadow-lg pb-2 border-t-4 border-[#89c854]'>
                             {SiteLinks.map((data) => generateLinkButton(data))}
+                            <div className={`text-black px-2 mx-2 border-b-2 hover:border-white `}>
+                                <button onClick={handleSearch}>
+                                    <h2>Search</h2>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 : 

@@ -211,13 +211,13 @@ const Calendar = () => {
 
         <div>
         {/* Calendar Navigation */}
-        <div style={{ textAlign: "center", marginBottom: "20px" }}>
-            <button onClick={previousMonth}>Previous</button>
+        <div style={{ textAlign: "center" }} className="py-8">
+            <button onClick={previousMonth} className="hover:underline cursor-pointer">Previous</button>
             <span style={{ margin: "0 15px", fontWeight: "bold" }}>
             {currentDate.toLocaleString("default", { month: "long" })}{" "}
             {currentDate.getFullYear()}
             </span>
-            <button onClick={nextMonth}>Next</button>
+            <button onClick={nextMonth} className="hover:underline cursor-pointer">Next</button>
         </div>
 
         {/* Calendar Grid */}

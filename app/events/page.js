@@ -15,7 +15,7 @@ export default function Home() {
                 sizes="100vw"
             />
             <Navbar/>
-            <div className="bg-transparent text-black w-full min-h-[calc(100vh-140px)] px-4 lg:px-24 pt-12">
+            <div className="bg-transparent text-black w-full min-h-[calc(100vh-140px)] px-4 lg:px-24 pt-8">
                 <div className="bg-white">
                     <Calendar/>
                 </div>
