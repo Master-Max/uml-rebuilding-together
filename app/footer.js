@@ -12,7 +12,7 @@ export default function Footer() {
                             alt="Rebuiling Together Logo"
                             width={300}
                             height={100}
-                            style={`object-fit: "cover"`}
+                            style="object-fit: 'cover'"
                         />
                     </div>
                     <div className="text-center md:py-0 py-2">
