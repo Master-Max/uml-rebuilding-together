@@ -26,6 +26,6 @@ export async function POST(request){
         description: 'Test Information - Description',
         location: 'Example Location'
     }
-    let tmpEventsArray = [tmpEventTemplate, tmpEventTemplate2:, tmpEventTemplate3]
+    let tmpEventsArray = [tmpEventTemplate, tmpEventTemplate2, tmpEventTemplate3]
     return NextResponse.json({array: tmpEventsArray, status: 0})
 }
